@@ -100,7 +100,7 @@ def appointments(request):
                      },
         )
           
-          send_email(html_message,request.POST.get('email',"None"))
+          send_email(html_message,'oye93@aol.com')
           return JsonResponse(resp)
          
 
