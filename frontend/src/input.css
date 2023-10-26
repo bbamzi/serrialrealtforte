@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#section1 {
+  background-image: linear-gradient(rgba(16, 106, 31, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./../img/land-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

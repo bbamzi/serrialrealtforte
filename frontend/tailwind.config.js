@@ -2,12 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["josefin Sans", "sans-serif"],
-        alata: ["Alata"],
-      },
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
     },
+    extend: {},
   },
   plugins: [],
 };
