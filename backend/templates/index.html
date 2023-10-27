@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -5,16 +6,16 @@
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-    <link rel="stylesheet" href="./../../backend/static/css/style.css" />
-
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./../../backend/static/css/style.css" /> -->
+    <link href="{% static 'css/style.css'%}" rel="stylesheet" />
+    <title>Serrial Realty Forte</title>
   </head>
   <body>
     <div class="flex flex-col">
       <header>
         <div class="md:px-5 flex items-center justify-between flex-row p-1">
           <div class="w-60">
-            <img src="./img/srf_logo.png" />
+            <img src=" {% static 'img/srf_logo.png'%}" />
           </div>
           <div class="hidden md:flex font-alata">
             <ul class="flex">
@@ -117,7 +118,7 @@
           <div class="mt-0">
             <div class="rounded-2xl">
               <img
-                src="./img/land_survey.jpg"
+                src=" {% static 'img/land_survey.jpg'%}"
                 class="object-contain hover:h-80 h-72 hover:transition-all hover:transition-2000 rounded-3xl hover:translate-x-2 p-3"
               />
             </div>
@@ -198,7 +199,11 @@
         </div>
       </section>
     </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key={{gmap_key}}&callback=initMap&v=weekly"
+      defer
+    ></script>
 
-    <script src="./index.js"></script>
+    <script src=" {% static 'js/index.js'%}"></script>
   </body>
 </html>
