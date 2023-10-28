@@ -2,200 +2,246 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
     <link rel="stylesheet" href="./css/style.css" />
-
-    <title>Document</title>
+    <title>Serrial Realty Forte</title>
   </head>
   <body>
-    <div class="flex flex-col">
-      <header>
-        <div class="md:px-5 flex items-center justify-between flex-row p-1">
-          <div class="w-60">
-            <img src="./img/srf_logo.png" />
-          </div>
-          <div class="hidden md:flex font-alata">
-            <ul class="flex">
-              <a href="#"
-                ><li
-                  class="mx-2 hover:border-b hover:border-green-600 hover:text-green-800"
-                >
-                  About
-                </li></a
-              >
-              <a href="#"
-                ><li
-                  class="mx-2 hover:border-b hover:border-green-600 hover:text-green-800"
-                >
-                  Our Operations
-                </li></a
-              >
-              <a href="#"
-                ><li
-                  class="mx-2 hover:border-b hover:border-green-600 hover:text-green-800"
-                >
-                  Contact Us
-                </li></a
-              >
-            </ul>
-          </div>
+    <!--  Header -->
+    <header>
+      <div class="flex items-center justify-between flex-row pb-5 py-3">
+        <div class="w-52 md:w-60">
+          <img src="./img/srf_logo.png" />
         </div>
-      </header>
-
-      <section id="section1" class="h-96 relative">
-        <button class="absolute bottom-[50%] left-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="white"
-            class="w-9 h-9"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
-            />
-          </svg>
-        </button>
-        <button class="absolute bottom-[50%] right-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="white"
-            class="w-9 h-9"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
-            />
-          </svg>
-        </button>
-
-        <div class="flex items-center justify-center flex-col py-20 gap-16">
-          <div>
-            <h1 class="text-5xl text-center text-white">
-              Land & Landed Property Management
-            </h1>
-          </div>
-          <div>
-            <p class="text-sm text-center text-white md:w-[500px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
-              rerum impedit, officia veniam quaerat commodi architecto doloribus
-              quibusdam quam eius quod non. Esse officia fugiat quo ullam
-              obcaecati recusandae soluta.
-            </p>
-          </div>
+        <div class="hidden md:flex font-alata">
+          <ul class="flex">
+            <a href="#"
+              ><li
+                class="mx-2 hover:border-b hover:border-green-600 hover:text-green-800"
+              >
+                About
+              </li></a
+            >
+            <a href="#"
+              ><li
+                class="mx-2 hover:border-b hover:border-green-600 hover:text-green-800"
+              >
+                Our Operations
+              </li></a
+            >
+            <a href="#"
+              ><li
+                class="mx-2 hover:border-b hover:border-green-600 hover:text-green-800"
+              >
+                Contact Us
+              </li></a
+            >
+          </ul>
         </div>
-      </section>
+      </div>
+    </header>
 
-      <section id="About-us" class="mt-10">
-        <div
-          class="flex gap-6 justify-around items-center h-auto w-full md:space-y-10 flex-col md:flex-row bg-lineThrough"
+    <!--  -->
+    <section id="section1" class="h-[400px] relative">
+      <button class="absolute bottom-[50%] left-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="w-9 h-9"
         >
-          <div class="md:w-1/2">
-            <div class="flex flex-col justify-start items-start px-5">
-              <p class="bg-green-600 inline-block px-2 text-white">About Us</p>
-              <h1 class="text-3xl text-start font-semibold font-serif">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus?
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="absolute bottom-[50%] right-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="w-9 h-9"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+
+      <div
+        class="container flex items-center justify-center flex-col py-16 space-y-9 md:py-20 md:space-y-16"
+      >
+        <div>
+          <h1 class="text-5xl text-center text-white">
+            Land & Landed Property Management
+          </h1>
+        </div>
+        <div class="p-4 max-w-lg">
+          <p class="text-sm text-center text-white md:w-[500px]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+            rerum impedit, officia veniam quaerat commodi architecto doloribus
+            quibusdam quam eius quod non. Esse officia fugiat quo ullam
+            obcaecati recusandae soluta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="About-us" class="mt-5 md:mt-20">
+      <div
+        class="p-2 md:p-0 relative flex items-center h-auto w-full md:space-y-10 flex-col md:flex-row bg-lineThrough"
+      >
+        <div class="mt-0 relative text-2xl">
+          <img
+            src="./img/land_survey.jpg"
+            class="object-contain md:hover:h-80 h-72 md:hover:transition-all md:hover:transition-2000 md:hover:translate-x-2"
+          />
+          <p
+            class="bg-green-600 inline-block px-2 text-white absolute top-[10%] md:left-1 md:top-[-5%]"
+          >
+            About Us
+          </p>
+        </div>
+
+        <div class="md:w-1/2">
+          <div class="flex flex-col justify-between items-start px-5">
+            <div
+              class="text-3xl text-center font-bold font-serif uppercase text-green-900 md:absolute top-[50px] left-[300px] bg-white md:w-[30rem]"
+            >
+              <h1>
+                serrial realty forte
+                <span class="hidden md:inline-block">limited</span>
               </h1>
-              <div class="border-l-green-800 border-l-8 p-2 mt-3">
-                <p class="text-gray-400 text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Culpa velit, fuga eveniet distinctio quia hic at corrupti
-                  veritatis ipsa tenetur.
-                </p>
-              </div>
             </div>
-          </div>
-          <div class="mt-0">
-            <div class="rounded-2xl">
-              <img
-                src="./img/land_survey.jpg"
-                class="object-contain hover:h-80 h-72 hover:transition-all hover:transition-2000 rounded-3xl hover:translate-x-2 p-3"
-              />
+            <div class="border-l-green-800 border-l-4 p-2 md:mt-10">
+              <p class="text-gray-800 text-center pt-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
+                accusamus laudantium temporibus pariatur praesentium
+                consequuntur autem cum maiores, quas, sequi nihil quo facilis
+                consequatur quae.
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="">
-        <div class="flex flex-col">
-          <div class="p-5">
-            <p class="bg-green-600 inline-block px-2 text-white">
-              Our Services
+    <section class="mt-32">
+      <div class="flex flex-col items-center">
+        <div class="flex">
+          <p class="bg-green-200 text-xl px-4 py-1 text-green-950 inline-block">
+            Our Services
+          </p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-center p-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            impedit non labore cum, harum magni.
+          </p>
+        </div>
+        <div
+          class="container max-w-6xl mx-auto px-6 text-gray-900 md:px-0"
+        ></div>
+      </div>
+
+      <div class="flex flex-col md:h-72 md:flex-row gap-3 p-2 md:p-0">
+        <div class="bg-tipper services-item">
+          <div class="">
+            <p class="text-lg absolute top-[40%] text-gray-200 text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
+              nulla?
             </p>
-            <h1 class="text-3xl text-start font-semibold font-serif">
-              SERIAL REALTY FORTE
+            <h1
+              class="text-xl text-center text-white absolute bottom-0 left-1 uppercase"
+            >
+              Constructions
             </h1>
           </div>
-          <div class="flex w-full flex-col items-center md:flex-row gap-1">
-            <div
-              class="bg-tipper p-5 flex flex-col justify-center items-center bg-cover space-y-7 md:w-1/4 md:transition md:ease-in-out md:delay-50 md:hover:-translate-y-6 md:duration-300 rounded-xl h-96 w-96"
+        </div>
+        <div class="bg-survey services-item">
+          <div class="">
+            <p class="text-lg absolute top-[40%] text-gray-200 text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
+              nulla?
+            </p>
+            <h1
+              class="text-xl text-center text-white absolute bottom-0 left-1 uppercase"
             >
-              <h3 class="text-4xl text-white">Constructions</h3>
-              <p class="text-center text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Beatae, at.
-              </p>
-            </div>
-            <div
-              class="bg-survey p-5 flex flex-col justify-center items-center bg-cover space-y-7 md:w-1/4 md:transition md:ease-in-out md:delay-50 md:hover:-translate-y-6 md:duration-300 rounded-xl h-96 w-96"
-            >
-              <h3 class="text-4xl text-white">Land Survey</h3>
-              <p class="text-center text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Beatae, at.
-              </p>
-            </div>
-            <div
-              class="bg-land_survey p-5 flex flex-col justify-center items-center bg-cover space-y-7 md:w-1/4 md:transition md:ease-in-out md:delay-50 md:hover:-translate-y-6 md:duration-300 rounded-xl h-96 w-96"
-            >
-              <h3 class="text-4xl text-white">Govt Acquisition</h3>
-              <p class="text-center text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Beatae, at.
-              </p>
-            </div>
-            <div
-              class="bg-contract p-5 flex flex-col justify-center items-center bg-cover space-y-7 md:w-1/4 md:transition md:ease-in-out md:delay-50 md:hover:-translate-y-6 md:duration-300 rounded-xl h-96 w-96"
-            >
-              <h3 class="text-4xl text-white">Land Documentation</h3>
-              <p class="text-center text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Beatae, at.
-              </p>
-            </div>
+              Land Survey
+            </h1>
           </div>
         </div>
-      </section>
-      <section class="mt-10">
-        <div class="flex flex-col mt-10">
-          <div class="p-5 space-y-2">
-            <p class="bg-green-600 inline-block px-2 text-white">
-              Available Properties
+        <div class="bg-land_survey services-item">
+          <div class="">
+            <p class="text-lg absolute top-[40%] text-gray-200 text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
+              nulla?
             </p>
-            <p
-              class="text-sm text-start font-semibold font-serif text-gray-500"
+            <h1
+              class="text-xl text-white absolute bottom-0 left-1 uppercase text-center"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
-              harum!
-            </p>
-          </div>
-          <div class="flex items-center justify-between p-3 h-auto">
-            <div class="h-96 border-none rounded-3xl p-3 w-[600px]">
-              <div id="map" class="h-full w-full"></div>
-            </div>
+              Govt Acquisition Management
+            </h1>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="bg-contract services-item">
+          <div class="">
+            <p class="text-lg absolute top-[40%] text-gray-200 text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
+              nulla?
+            </p>
+            <h1
+              class="text-xl text-center text-white absolute bottom-0 left-1 uppercase"
+            >
+              Land
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-10">
+        <!-- <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+          more
+        </h2> -->
+        <button
+          class="hidden px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-green-900 hover:bg-green-800 hover:text-white md:block"
+        >
+          See All
+        </button>
+      </div>
+    </section>
+    <section class="mt-20">
+      <div class="flex flex-row justify-between items-center pr-3">
+        <div>
+          <p class="bg-green-200 text-3xl px-4 py-1 text-green-950">Listings</p>
+        </div>
+        <div
+          class="px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-green-900 hover:bg-green-800 hover:text-white"
+        >
+          <select name="" id="">
+            <option value="item 1">item 1</option>
+            <option value="item 1">item 2</option>
+            <option value="item 1">item 3</option>
+            <option value="item 1">item 4</option>
+            <option value="item 1">item 5</option>
+          </select>
+        </div>
+
+        <!-- <div>
+          <p class="text-gray-400 text-center p-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            impedit non labore cum, harum magni.
+          </p>
+        </div> -->
+      </div>
+    </section>
 
     <script src="./index.js"></script>
   </body>

@@ -23,3 +23,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.services-item {
+  @apply bg-cover h-72 md:w-1/4 relative md:hover:scale-110 md:duration-200;
+}
