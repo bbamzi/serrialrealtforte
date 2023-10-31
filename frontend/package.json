@@ -75,6 +75,7 @@
     "reusify": "^1.0.4",
     "run-parallel": "^1.2.0",
     "source-map-js": "^1.0.2",
+    "split-type": "^0.3.4",
     "sucrase": "^3.34.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
     "thenify": "^3.3.1",

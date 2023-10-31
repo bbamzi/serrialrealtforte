@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        section_one_bg:
+          "linear-gradient(to right bottom,rgba(16, 106, 31, 0.6), rgba(0, 0, 0, 0.6)), url(' ./../img/land-1.jpg')",
+        haikei: "url('./../img/wave-haikei.svg')",
         tipper:
           "linear-gradient(to right bottom, rgba(16, 106, 31, 0.6), rgba(0, 0, 0, 0.6)), url('./../img/tipper.jpg')",
         survey:

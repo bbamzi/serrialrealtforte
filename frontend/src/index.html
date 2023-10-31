@@ -3,6 +3,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Serrial Realty Forte</title>
@@ -10,17 +12,37 @@
 
   <body>
     <!--  Header -->
-    <header class="header transition-all ease-in-out duration-1000">
-      <nav class="navbar flex justify-between items-center flex-row">
+    <header class="header transition-all ease-in-out duration-1000 px-4">
+      <nav class="navbar flex justify-between items-center flex-row h-20 p-2">
         <div class="w-52 md:w-60 nav-branding">
-          <img src="./img/srf_logo.png" />
+          <img src="./img/srf_logo.png" class="" />
         </div>
-        <ul class="nav-menu z-10">
-          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+        <ul
+          class="nav-menu flex justify-between items-center gap-20 z-10 md:mr-10 text-green-700 list-none transition ease-in-out duration-1000"
+        >
+          <li class="nav-item">
+            <a
+              href=""
+              class="nav-link hover:text-green-900 hover:underline hover:transition hover:ease-in-out duration-500"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href=""
+              class="nav-link hover:text-green-900 hover:underline hover:transition hover:ease-in-out duration-500"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href=""
+              class="nav-link hover:text-green-900 hover:underline hover:transition hover:ease-in-out duration-500"
+              >Contact</a
+            >
+          </li>
         </ul>
-        <div class="hamburger pr-5">
+        <div class="hamburger pr-5 md:hidden cursor-pointer">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -28,59 +50,33 @@
       </nav>
     </header>
     <!-- SECTION 1 -->
-    <section id="section1" class="h-[400px] relative padding">
-      <!-- <button class="absolute bottom-[50%] left-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="white"
-          class="w-9 h-9"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
-          />
-        </svg>
-      </button>
-      <button class="absolute bottom-[50%] right-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="white"
-          class="w-9 h-9"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
-          />
-        </svg>
-      </button> -->
-
-      <div
-        class="container flex items-center justify-center flex-col py-16 space-y-9 md:py-20 md:space-y-16"
-      >
+    <section id="section1" class="h-screen relative bg-section_one_bg bg-cover">
+      <div class="flex flex-col items-center pt-52">
         <div>
-          <h1
-            id="hero-text"
-            class="text-5xl text-left text-white p-2 animate-pulse"
-          >
+          <h1 id="hero-text" class="text-5xl text-white text-center">
             Land & Landed Property Management
           </h1>
         </div>
-        <!-- <div class="p-4 max-w-lg">
-          <p class="text-sm text-center text-white md:w-[500px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+        <div class="p-4 max-w-lg pt-10">
+          <p
+            id="p-1"
+            class="text-sm text-center text-white md:w-[500px] opacity-0 transform duration-1000"
+          >
+            one Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
             rerum impedit, officia veniam quaerat commodi architecto doloribus
             quibusdam quam eius quod non. Esse officia fugiat quo ullam
             obcaecati recusandae soluta.
           </p>
-        </div> -->
+          <!-- <p
+            id="p-2"
+            class="text-sm text-center text-white md:w-[500px] hidden hero-paragraph ease-in-out transition-all duration-1000 translate-x-10"
+          >
+            two Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+            rerum impedit, officia veniam quaerat commodi architecto doloribus
+            quibusdam quam eius quod non. Esse officia fugiat quo ullam
+            obcaecati recusandae soluta.
+          </p> -->
+        </div>
       </div>
       <div class="custom-shape-divider-bottom-1698534490">
         <svg
@@ -97,14 +93,14 @@
       </div>
     </section>
     <!-- SECTION 2 -->
-    <section id="About-us" class="mt-5 md:mt-20 about_us">
+    <section id="About-us" class="mt-5 md:mt-20 about_us section duration-1000">
       <div
         class="p-2 md:p-0 relative flex items-center h-auto w-full md:space-y-10 flex-col md:flex-row bg-lineThrough"
       >
         <div class="mt-0 relative text-2xl">
           <img
             src="./img/land_survey.jpg"
-            class="object-contain md:hover:h-80 h-72 md:hover:transition-all md:hover:transition-2000 md:hover:translate-x-2"
+            class="object-contain h-72 md:hover:scale-110 md:duration-200 md:hover:translate-x-4"
           />
           <p
             class="bg-green-200 inline-block px-2 text-green-900 absolute top-[10%] md:left-1 md:top-[-5%]"
@@ -137,93 +133,269 @@
         </div>
       </div>
     </section>
-    <!-- SECTION 3 -->
-    <section class="mt-24">
-      <div class="flex flex-col items-center">
-        <div class="flex">
-          <p class="bg-green-800 text-xl px-4 py-1 text-white inline-block">
-            Our Services
+
+    <section class="pt-24 section duration-1000">
+      <div class="container mx-auto px-3">
+        <h2 class="text-4xl mb-6 font-bold text-center text-green-800">
+          Services
+        </h2>
+        <p class="max-w-xs mx-auto text-center text gray-400">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+          distinctio aut similique?
+        </p>
+      </div>
+    </section>
+    <section
+      id="features"
+      class="section duration-1000 bg-haikei bg-cover relative pb-40"
+    >
+      <div class="custom-shape-divider-top-1698775828">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <div
+        class="relative container flex flex-col items-center px-6 mx-auto md:flex-row md:space-x-7 pb-20 pt-10"
+      >
+        <!-- horizontal line -->
+        <div
+          class="hidden absolute top-72 w-10/12 left-16 h-3 bg-green-200 md:block"
+        ></div>
+        <!--  vertical line -->
+        <div
+          class="absolute w-2 left-1/2 h-full -ml-1 bg-green-700 md:hidden"
+        ></div>
+        <!-- box 1 -->
+
+        <div class="relative services-item">
+          <div class="absolute -ml-10 left-1/2 -top-10">
+            <div
+              class="flex item-center justify-center w-20 h-20 p-4 rounded-full bg-green-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="green"
+                class="w-9 h-9"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Land Documentations
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            eius reiciendis ullam quos!
           </p>
+          <a href="#" class="absolute bottom-0 right-1 p-2">Learn More</a>
+        </div>
+        <!-- box 2 -->
+        <div class="relative mt-24 services-item md:mt-12">
+          <div class="absolute -ml-10 left-1/2 -top-10">
+            <div
+              class="flex item-center justify-center w-20 h-20 p-4 rounded-full bg-green-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="{1.5}"
+                stroke="green"
+                class="w-9 h-9"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Land Sales
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            eius reiciendis ullam quos!
+          </p>
+          <a href="#" class="absolute bottom-0 right-1 p-2">Learn More</a>
+        </div>
+        <!-- box 3 -->
+        <div class="relative mt-24 services-item md:mt-24">
+          <div class="absolute -ml-10 left-1/2 -top-10">
+            <div
+              class="flex item-center justify-center w-20 h-20 p-4 rounded-full bg-green-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="green"
+                class="w-9 h-9"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Constructions
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            eius reiciendis ullam quos!
+          </p>
+          <a href="#" class="absolute bottom-0 right-1 p-2">Learn More</a>
+        </div>
+        <!-- box 4 -->
+        <div class="relative mt-24 services-item md:mt-48">
+          <div class="absolute -ml-10 left-1/2 -top-10">
+            <div
+              class="flex item-center justify-center w-20 h-20 p-4 rounded-full bg-green-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="green"
+                class="w-9 h-9"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h5
+            class="pt-3 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Land Acquisition Management
+          </h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            eius reiciendis ullam quos!
+          </p>
+          <a href="#" class="absolute bottom-0 right-1 p-2">Learn More</a>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1698772377">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="./img/srf_logo.png" />
+          <img src="./img/srf_logo.png" />
+          <img src="./img/srf_logo.png" />
+          <img src="./img/srf_logo.png" />
+          <img src="./img/srf_logo.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section duration-1000">
+      <div class="flex flex-col justify-center items-center mt-20">
+        <h2 class="text-3xl px-4 py-1 text-green-800 inline-block font-bold">
+          Partners
+        </h2>
+      </div>
+      <div class="flex flex-row items-center justify-center">
+        <div>
+          <img
+            class="h-56 md:h-44 md:w-60 w-full p-2"
+            src="https://reelfruit.com/images/files/logo_194010dd-7708-4da1-b7b3-7fb178645d30_325xb6fd.png"
+            alt="item 1"
+          />
         </div>
         <div>
-          <p class="text-gray-700 text-center p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            impedit non labore cum, harum magni.
-          </p>
+          <img
+            class="h-56 md:h-44 md:w-60 w-full p-2"
+            src="http://www.cedarbeaumontfoods.com/wp-content/uploads/2020/06/cropped-20200605_200022_0000-2048x2048.png"
+            alt="item 1"
+          />
         </div>
-        <div
-          class="container max-w-6xl mx-auto px-6 text-gray-900 md:px-0"
-        ></div>
+        <div>
+          <img
+            src="./img/land-2.jpeg"
+            alt=""
+            class="h-56 md:h-44 md:w-60 w-full p-2"
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.adexen.com/upload/company-logos/16380461981594732526.jpg"
+            alt="item 1"
+          />
+        </div>
+        <div>
+          <img src="./img/ogshc.jpg" alt="item 1" />
+        </div>
+        <div>
+          <img
+            src="https://rpeltd.com/wp-content/uploads/2021/09/Asset-1-1.svg"
+            alt="item 1"
+          />
+        </div>
       </div>
+    </section> -->
 
-      <div class="flex flex-col md:h-72 md:flex-row gap-3 p-2 md:p-0">
-        <div class="bg-tipper services-item">
-          <div class="">
-            <p class="text-lg absolute top-[40%] text-gray-200 text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
-              nulla?
-            </p>
-            <h1
-              class="text-xl text-center text-white absolute bottom-0 left-1 uppercase"
-            >
-              Constructions
-            </h1>
-          </div>
-        </div>
-        <div class="bg-survey services-item">
-          <div class="">
-            <p class="text-lg absolute top-[40%] text-gray-200 text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
-              nulla?
-            </p>
-            <h1
-              class="text-xl text-center text-white absolute bottom-0 left-1 uppercase"
-            >
-              Land Survey
-            </h1>
-          </div>
-        </div>
-        <div class="bg-land_survey services-item">
-          <div class="">
-            <p class="text-lg absolute top-[40%] text-gray-200 text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
-              nulla?
-            </p>
-            <h1
-              class="text-xl text-white absolute bottom-0 left-1 uppercase text-center"
-            >
-              Govt Acquisition Management
-            </h1>
-          </div>
-        </div>
-        <div class="bg-contract services-item">
-          <div class="">
-            <p class="text-lg absolute top-[40%] text-gray-200 text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
-              nulla?
-            </p>
-            <h1
-              class="text-xl text-center text-white absolute bottom-0 left-1 uppercase"
-            >
-              Land Documentations
-            </h1>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center"></div>
-    </section>
-    <!-- SECTION 4 -->
-    <div class="flex flex-col justify-center items-center mt-10">
-      <p
-        class="bg-green-800 text-3xl px-4 py-1 text-white inline-block tracking-widest"
-      >
+    <div
+      class="flex flex-col justify-center items-center mt-20 section duration-1000"
+    >
+      <h2 class="text-3xl px-4 py-1 text-green-800 inline-block font-bold">
         Reviews
-      </p>
+      </h2>
     </div>
     <!-- SECTION 5 -->
-    <section id="reviews">
+    <section id="reviews" class="section duration-1000">
       <div class="bg-green-950 h-auto mt-5 relative md:mt-14">
-        <p class="absolute top-7 bg-white text text-6xl">Reviews</p>
         <div class="custom-shape-divider-top-1698543426">
           <svg
             data-name="Layer 1"
@@ -323,11 +495,11 @@
       </div>
     </section>
     <!-- SECTION 6 -->
-    <section class="md:mt-14 mt-10">
+    <section class="md:mt-20 section duration-1000">
       <div class="flex flex-col justify-center items-center mt-6">
-        <p class="bg-green-800 text-xl px-4 py-1 text-white inline-block">
-          Available Properties
-        </p>
+        <h2 class="text-3xl px-4 py-1 text-green-500 inline-block font-bold">
+          Listings
+        </h2>
       </div>
       <div class="p-6">
         <div class="grid md:grid-cols-5 md:gap-3 gap-5">
@@ -429,53 +601,9 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="flex flex-col justify-center items-center mt-6">
-        <p class="bg-green-800 text-xl px-4 py-1 text-white inline-block">
-          Our Trusted Partners
-        </p>
-      </div>
-      <div class="flex flex-row items-center justify-center">
-        <div>
-          <img
-            class="h-56 md:h-44 md:w-60 w-full p-2"
-            src="https://reelfruit.com/images/files/logo_194010dd-7708-4da1-b7b3-7fb178645d30_325xb6fd.png"
-            alt="item 1"
-          />
-        </div>
-        <div>
-          <img
-            class="h-56 md:h-44 md:w-60 w-full p-2"
-            src="http://www.cedarbeaumontfoods.com/wp-content/uploads/2020/06/cropped-20200605_200022_0000-2048x2048.png"
-            alt="item 1"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/land-2.jpeg"
-            alt=""
-            class="h-56 md:h-44 md:w-60 w-full p-2"
-          />
-        </div>
-        <div>
-          <img
-            src="https://www.adexen.com/upload/company-logos/16380461981594732526.jpg"
-            alt="item 1"
-          />
-        </div>
-        <div>
-          <img src="./img/ogshc.jpg" alt="item 1" />
-        </div>
-        <div>
-          <img
-            src="https://rpeltd.com/wp-content/uploads/2021/09/Asset-1-1.svg"
-            alt="item 1"
-          />
-        </div>
-      </div>
-    </section>
+
     <footer class="mt-14">
-      <div class="flex flex-col bg-green-800 text-white">
+      <div class="flex flex-col bg-green-900 text-white">
         <div class="grid md:grid-cols-2 grid-cols-1">
           <div class="md:border-r-[1px]">
             <div class="mt-10 md:pl-20 p-2">
@@ -497,12 +625,12 @@
             </div>
           </div>
           <div>
-            <div class="mt-10 md:pl-20 p-2 md:grid md:grid-cols-2">
+            <div class="mt-10 md:pl-20 p-2 md:grid md:grid-cols-2 text-white">
               <div class="mb-10 md:mb-0">
                 <h3 class="text-2xl font-bold uppercase">QUICK LINKS</h3>
                 <div class="md:flex-row mt-3">
                   <div>
-                    <ul class="pl-4">
+                    <ul class="pl-4 text-white">
                       <li>About Us</li>
                       <li>Careers</li>
                       <li>Blog</li>
