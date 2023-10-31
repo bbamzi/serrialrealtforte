@@ -1,85 +1,30 @@
-function initMap() {
-  // Styles a map in night mode.
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 7.1475, lng: 3.3619 },
-    zoom: 12,
-    styles: [
-      { elementType: "geometry", stylers: [{ color: "#0b4409" }] },
-      { elementType: "labels.text.stroke", stylers: [{ color: "#0b4409" }] },
-      { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-      {
-        featureType: "administrative.locality",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
-      {
-        featureType: "poi",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
+// const btn = document.getElementById("menu-btn");
+// const menu = document.getElementById("menu");
 
-      {
-        featureType: "poi.park",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#6b9a76" }],
-      },
-      {
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [{ color: "#38414e" }],
-      },
-      {
-        featureType: "road",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#212a37" }],
-      },
-      {
-        featureType: "road",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#9ca5b3" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "geometry",
-        stylers: [{ color: "#746855" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#1f2835" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#f3d19c" }],
-      },
-      {
-        featureType: "transit",
-        elementType: "geometry",
-        stylers: [{ color: "#2f3948" }],
-      },
-      {
-        featureType: "transit.station",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#d59563" }],
-      },
-      {
-        featureType: "water",
-        elementType: "geometry",
-        stylers: [{ color: "#17263c" }],
-      },
-      {
-        featureType: "water",
-        elementType: "labels.text.fill",
-        stylers: [{ color: "#515c6d" }],
-      },
-      {
-        featureType: "water",
-        elementType: "labels.text.stroke",
-        stylers: [{ color: "#17263c" }],
-      },
-    ],
-  });
-}
+// function navToggle() {
+//   btn.classList.toggle("open");
+//   menu.classList.toggle("flex");
+//   menu.classList.toggle("hidden");
+// }
 
-window.initMap = initMap;
+// btn.addEventListener("click", navToggle);
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const header = document.querySelector(".header");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  // navMenu.classList.add("mb-12");
+  header.classList.toggle("mb-52");
+});
+
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
+
+// window.onload(document.getElementById("hero-text").classList.toggle("hidden"));
