@@ -85,3 +85,8 @@ gsap.to(".char", {
   delay: 0.02,
   duration: 0.5,
 });
+
+// var copy = document.querySelector(".logos-slide");
+// document.querySelector(".logos").append(copy);
+
+// console.log(copy);
