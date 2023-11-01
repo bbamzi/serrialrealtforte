@@ -5,6 +5,17 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Serrial Realty Forte</title>
@@ -39,6 +50,13 @@
               href=""
               class="nav-link hover:text-green-900 hover:underline hover:transition hover:ease-in-out duration-500"
               >Contact</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href=""
+              class="nav-link hover:text-green-900 hover:underline hover:transition hover:ease-in-out duration-1000"
+              >Gallery</a
             >
           </li>
         </ul>
@@ -400,7 +418,7 @@
     </div>
     <!-- SECTION 5 -->
     <section id="reviews" class="section duration-700">
-      <div class="bg-green-950 h-auto mt-5 relative md:mt-14">
+      <div class="bg-green-950 h-auto mt-5 relative md:mt-14 p-2">
         <div class="custom-shape-divider-top-1698543426">
           <svg
             data-name="Layer 1"
@@ -472,10 +490,10 @@
               </svg>
             </button>
             <div
-              class="flex absolute bottom-0 left-[50%] gap-1 hidden md:inline-block"
+              class="flex absolute bottom-0 md:left-[50%] gap-1 md:inline-block"
             >
               <button
-                class="h-4 w-4 bg-white rounded-2xl border-yellow-400 border"
+                class="h-4 w-4 bg-yellow-300 rounded-2xl border-yellow-400 border"
               >
                 &nbsp;
               </button>
@@ -751,7 +769,17 @@
         </button>
       </div>
     </section>
+
+    <section>
+      <div class="p-6 flex justify-center">
+        <div
+          id="map"
+          class="h-96 w-96 md:w-1/2 shadow-lg border-2 rounded-2xl"
+        ></div>
+      </div>
+    </section>
     <section class="my-20">
+      <div></div>
       <div class="flex flex-col items-center justify-center gap-6">
         <div>
           <h3 class="font-bold text-3xl text-green-900">
@@ -837,5 +865,59 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script>
+      const locations = [
+        {
+          decription: "6 Acres of land",
+          name: "Kobape",
+          coord: [7.024237162621348, 3.490552473381581],
+        },
+        {
+          decription: "mini Estate ",
+          name: "obada-oko",
+          coord: [7.071486120836058, 3.283841929678076],
+        },
+        {
+          decription: "Land for sale",
+          name: "Laderin",
+          coord: [7.122270372435762, 3.3878660159861584],
+        },
+        {
+          decription: "Land for sale",
+          name: "Laderin",
+          coord: [7.122519200298766, 3.3842658587491363],
+        },
+        {
+          decription: "Land for sale",
+          name: "Laderin",
+          coord: [7.114620814244302, 3.38427937160624],
+        },
+        {
+          decription: "Land for sale",
+          name: "Laderin",
+          coord: [7.108446196802728, 3.379565481081441],
+        },
+      ];
+
+      var map = L.map("map", { scrollWheelZoom: false }).setView(
+        [7.1122, 3.3222],
+        11
+      );
+
+      L.tileLayer("https://tile.osm.ch/switzerland/{z}/{x}/{y}.png").addTo(map);
+
+      for (var i = 0; i < locations.length; i++) {
+        marker = new L.marker(locations[i].coord)
+          .bindPopup(
+            `<a href="#">${locations[i].decription} <br/> ${locations[i].name}</a>`
+          )
+          .addTo(map);
+      }
+
+      // L.marker([7.1475, 3.3619])
+      //   .addTo(map)
+      //   .bindPopup("A pretty CSS popup.<br> Easily customizable.")
+      //   .openPopup();
+    </script>
   </body>
 </html>

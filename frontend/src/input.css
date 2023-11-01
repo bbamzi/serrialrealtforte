@@ -227,3 +227,18 @@ body {
   margin: 0 40px;
   width: fit-content;
 }
+
+/* #map:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(101, 173, 113, 0.6),
+    rgba(175, 170, 170, 0.6)
+  );
+  pointer-events: none;
+  z-index: 999;
+} */
