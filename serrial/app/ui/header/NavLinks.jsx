@@ -26,7 +26,7 @@ export default function NavLinks() {
               { underline: pathname === link.href }
             )}
           >
-            {link.name}
+            <li className="nav-item">{link.name}</li>
           </Link>
         );
       })}

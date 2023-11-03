@@ -156,7 +156,7 @@ body {
     position: absolute;
     left: -100%;
     top: 70px;
-    gap: 30px;
+    gap: 0;
     flex-direction: column;
     background-color: white;
     width: 100%;

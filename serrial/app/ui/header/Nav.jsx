@@ -19,14 +19,14 @@ function Nav({ isActive, handleHamburger }) {
       </div>
       <ul
         className={clsx(
-          "nav-menu mt-4 flex justify-between items-center  z-10 md:mr-10 text-green-700 list-none transition ease-in-out duration-700",
+          "nav-menu  flex justify-between items-center gap-20 z-10 md:mr-10 text-green-700 list-none transition ease-in-out duration-700",
           { active: isActive }
         )}
       >
         <NavLinks />
       </ul>
       <div
-        className={clsx("pr-5 md:hidden cursor-pointer", {
+        className={clsx("pr-5 md:hidden hamburger cursor-pointer", {
           active: isActive,
         })}
         onClick={() => handleHamburger()}
