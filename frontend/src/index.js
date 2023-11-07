@@ -73,7 +73,6 @@ window.onload = setTimeout(() => {
 }, 2000);
 
 let textSplit = new SplitType("#hero-text");
-let characters = document.querySelectorAll(".char");
 
 for (let index = 0; index < characters.length; index++) {
   characters[index].classList.add("translate-y-full");
@@ -86,7 +85,7 @@ gsap.to(".char", {
   duration: 0.5,
 });
 
-// var copy = document.querySelector(".logos-slide");
-// document.querySelector(".logos").append(copy);
+var copy = document.querySelector(".logos-slide");
+document.querySelector(".logos").append(copy);
 
-// console.log(copy);
+console.log(copy);

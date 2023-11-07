@@ -2,6 +2,7 @@ import Image from "next/image";
 import NavLinks from "./NavLinks";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import Link from "next/link";
 
 function Nav({ isActive, handleHamburger }) {
   return (
@@ -9,17 +10,19 @@ function Nav({ isActive, handleHamburger }) {
       className={"navbar flex justify-between items-center flex-row h-20 p-2"}
     >
       <div className="w-52 md:w-60 nav-branding">
-        <Image
-          src="/img/srf_logo.png"
-          className=""
-          alt="serrial logo"
-          width={1000}
-          height={700}
-        />
+        <Link href={"/"}>
+          <Image
+            src="/img/srf_logo.png"
+            className=""
+            alt="serrial logo"
+            width={1000}
+            height={700}
+          />
+        </Link>
       </div>
       <ul
         className={clsx(
-          "nav-menu  flex justify-between items-center gap-20 z-10 md:mr-10 text-green-700 list-none transition ease-in-out duration-700",
+          "nav-menu  flex justify-between items-center gap-20 z-10 md:mr-10 text-green-700 list-none transition ease-in-out duration-700 ",
           { active: isActive }
         )}
       >

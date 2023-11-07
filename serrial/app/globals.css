@@ -18,6 +18,10 @@ body {
   @apply flex flex-col p-6 space-y-6 bg-gray-100 rounded-lg md:w-1/4 h-72 md:w-1/4 relative md:hover:scale-110 md:duration-200 cursor-pointer;
 }
 
+.input-box {
+  @apply h-10 bg-green-700 rounded-lg text-black border-0 border-white focus:border-white focus:shadow-lg;
+}
+
 .section--hidden {
   @apply opacity-0 transform translate-y-24;
 }

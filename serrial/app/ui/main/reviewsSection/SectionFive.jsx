@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function SectionFive() {
   return (
     <>
@@ -24,11 +26,14 @@ function SectionFive() {
 
           <div className="flex items-center flex-col md:flex-col">
             <div className="bg-green-950 md:w-[600px] flex flex-col md:flex-row items-center p-5 gap-5 relative drop-shadow-2xl">
-              <img
-                src="./img/surveyor.jpeg"
-                className="w-52 h-60 rounded-2xl md:block pr-5"
-                alt=""
-              />
+              {/* <Image
+                width={188}
+                height={240}
+                src={"/img/surveyor.jpeg"}
+                className="rounded-2xl md:block pr-5"
+                alt="img"
+              /> */}
+              {/* 
               <blockquote className="text-left text-white">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -45,13 +50,13 @@ function SectionFive() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="w-8 h-8"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M15.75 19.5L8.25 12l7.5-7.5"
                   />
                 </svg>
@@ -61,13 +66,13 @@ function SectionFive() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="w-8 h-8"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M8.25 4.5l7.5 7.5-7.5 7.5"
                   />
                 </svg>
@@ -85,7 +90,7 @@ function SectionFive() {
                 <button className="h-4 w-4 bg-white rounded-2xl border-yellow-400 border">
                   &nbsp;
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

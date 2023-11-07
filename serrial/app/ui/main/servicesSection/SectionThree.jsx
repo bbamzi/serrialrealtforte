@@ -1,4 +1,5 @@
-import SectionOneShapeDivider from "../sectionOne/SectionOneShapeDivider";
+import Link from "next/link";
+import SectionOneShapeDivider from "../heroSection/SectionOneShapeDivider";
 import SectionThreeDividerButtom from "./SectionThreeDividerButtom";
 import SectionThreeShapeDividerTop from "./SectionThreeShapeDividerTop";
 
@@ -20,7 +21,7 @@ function SectionThree() {
       </div>
       <section
         id="features"
-        className="bg-haikei bg-cover relative md:pb-40 pb-10"
+        className="bg-haikei bg-cover relative md:pb-40 pb-10 mt-10"
       >
         <SectionThreeShapeDividerTop />
         <div className="relative container flex flex-col items-center px-6 mx-auto md:flex-row md:space-x-7 pb-20 pt-10">

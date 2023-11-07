@@ -8,10 +8,9 @@ const links = [
     name: "About",
     href: "/about",
   },
-  { name: "Contact", href: "/contact-us" },
+  { name: "Contact Us", href: "/contact-us" },
   { name: "Gallery", href: "/gallery" },
 ];
-
 export default function NavLinks() {
   const pathname = usePathname();
   return (
@@ -22,7 +21,7 @@ export default function NavLinks() {
             href={link.href}
             key={link.name}
             className={clsx(
-              " nav-link hover:text-green-900 hover:underline hover:transition hover:ease-in-out duration-500",
+              " nav-link hover:text-green-900 hover:underline hover:transition hover:ease-in-out duration-500 ",
               { underline: pathname === link.href }
             )}
           >

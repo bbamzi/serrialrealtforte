@@ -1,8 +1,12 @@
 import Image from "next/image";
+import { useRef } from "react";
 
 function SectionTwo() {
+  const ref = useRef();
+
   return (
     <section
+      ref={ref}
       id="About-us"
       className="mt-5 md:mt-20 about_us section duration-700"
     >

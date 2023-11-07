@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function SectionSix() {
   return (
     <section className="my-20">
@@ -9,9 +11,11 @@ function SectionSix() {
           </h3>
         </div>
         <div>
-          <button className="bg-green-900 text-white px-10 py-4 rounded-2xl text-2xl hover:bg-white hover:text-green-900 hover:duration-200 hover:border-green-900 hover:border-2 tracking-widest">
-            Contact us
-          </button>
+          <Link href={"/contact-us"}>
+            <button className="bg-green-900 text-white px-10 py-4 rounded-2xl text-2xl hover:bg-white hover:text-green-900 hover:duration-200 hover:border-green-900 hover:border-2 tracking-widest">
+              Contact us
+            </button>
+          </Link>
         </div>
       </div>
     </section>
