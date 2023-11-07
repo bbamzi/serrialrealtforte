@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { properties } from "@/scripts/data";
 import { MapContainer, Marker, Popup, TileLayer, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -6,9 +5,7 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import { icon } from "leaflet";
 
-function SectionEight() {
-  const ref = useRef();
-
+function MapSection() {
   const position = [7.1122, 3.3222];
   return (
     <section>
@@ -59,4 +56,4 @@ function SectionEight() {
   );
 }
 
-export default SectionEight;
+export default MapSection;

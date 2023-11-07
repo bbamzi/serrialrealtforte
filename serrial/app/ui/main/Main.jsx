@@ -6,7 +6,7 @@ import HeroSection from "./heroSection/HeroSection";
 import SectionSix from "./contactUsSection/SectionSix";
 import SectionThree from "./servicesSection/SectionThree";
 import SectionTwo from "./aboutSection/SectionTwo";
-import SectionEight from "./mapSection/page";
+import MapSection from "./mapSection/page";
 import ListingSection from "./listingsSection/page";
 
 function Main() {
@@ -37,7 +37,7 @@ function Main() {
         <SectionFour />
         <SectionFive />
         <ListingSection />
-        <SectionEight />
+        <MapSection />
         <SectionSix />
       </div>
     </>

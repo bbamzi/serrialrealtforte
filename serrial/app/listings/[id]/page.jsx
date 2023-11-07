@@ -5,6 +5,7 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import Image from "next/image";
 
 function ListingItems() {
   const params = useParams();
@@ -22,11 +23,11 @@ function ListingItems() {
         <p>{details.description}</p>
       </div>
       <div className="p-20 grid grid-cols-1 md:grid-cols-5">
-        <img alt="one" src="" />
-        <img alt="two" src="" />
-        <img alt="three" src="" />
-        <img alt="four" src="" />
-        <img alt="five" src="" />
+        <Image width={50} height={50} alt="one" src="" />
+        <Image width={50} height={50} alt="two" src="" />
+        <Image width={50} height={50} alt="three" src="" />
+        <Image width={50} height={50} alt="four" src="" />
+        <Image width={50} height={50} alt="five" src="" />
       </div>
       <div className="flex flex-col md:flex-row">
         <div>

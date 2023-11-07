@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { tiles } from "@/scripts/data";
 
-function page() {
+function Page() {
   const router = useRouter();
   //   const service = useParams();
   //   const id = Number(service.serviceId) - 1;
@@ -94,4 +94,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

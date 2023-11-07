@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
-import { useParams, usePathname } from "next/navigation";
-import { tiles } from "@/scripts/data";
 import { useRouter } from "next/navigation";
 
-function page() {
+function Page() {
   const router = useRouter();
   return (
     <>
@@ -41,4 +39,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
