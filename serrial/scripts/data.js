@@ -20,7 +20,7 @@ export const tiles = [
       </svg>
     ),
     mt: "",
-    link: "/land-documentations",
+    link: "services/land-documentations",
     src: "/img/land_docs.jpeg",
   },
   {
@@ -44,7 +44,7 @@ export const tiles = [
       </svg>
     ),
     mt: 12,
-    link: "/lands-for-sale",
+    link: "services/lands-for-sale",
     src: "/img/contract.webp",
   },
   {
@@ -67,7 +67,7 @@ export const tiles = [
         />
       </svg>
     ),
-    link: "/constructions",
+    link: "services/constructions",
     src: "/img/tipper.jpg",
   },
   {

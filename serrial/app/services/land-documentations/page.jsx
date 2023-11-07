@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useParams, usePathname } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import { tiles } from "@/scripts/data";
 
 function page() {
+  const router = useRouter();
   //   const service = useParams();
   //   const id = Number(service.serviceId) - 1;
 
@@ -12,6 +13,7 @@ function page() {
   return (
     <>
       <div className="p-20">
+        <button onClick={() => router.back()}>⬅️Go Back</button>
         <div className="flex">
           <h1 className="text-3xl font-bold text-green-800">
             Land Documentations

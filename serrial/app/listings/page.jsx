@@ -13,6 +13,8 @@ function AllListings() {
   }
   return (
     <div className="p-10 space-y-5">
+      <button onClick={() => router.back()}>⬅️Go Back</button>
+
       <div>
         <h1 className="text-3xl font-bold font-serif">All Listings</h1>
       </div>
