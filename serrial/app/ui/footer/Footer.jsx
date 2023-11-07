@@ -107,7 +107,9 @@ function Footer() {
               <span> Serrial Realty Forte Limited. All Rights Reserved. </span>
             </a>
           </p>
-          <p className="md:mr-10">Designed by GalaxySailors Limted</p>
+          <Link href={"https://github.com/bbamzi"}>
+            <p className="md:mr-10">Designed by GalaxySailors Limted</p>
+          </Link>
         </div>
       </div>
     </footer>

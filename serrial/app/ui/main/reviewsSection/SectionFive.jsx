@@ -26,24 +26,19 @@ function SectionFive() {
 
           <div className="flex items-center flex-col md:flex-col">
             <div className="bg-green-950 md:w-[600px] flex flex-col md:flex-row items-center p-5 gap-5 relative drop-shadow-2xl">
-              {/* <Image
+              <Image
                 width={188}
                 height={240}
                 src={"/img/surveyor.jpeg"}
                 className="rounded-2xl md:block pr-5"
                 alt="img"
-              /> */}
-              {/* 
+              />
+
               <blockquote className="text-left text-white">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt, ullam. Numquam fuga at maiores non velit beatae
-                  tempore commodi, consectetur alias ducimus voluptate unde quia
-                  odio quam, harum molestiae! Excepturi!
-                </p>
-                <p className="text-right mt-5">Bamigboye Akinbode</p>
-                <p className="text-right">Senior Manager</p>
-                <p className="text-right">GalaxySailors Limited</p>
+                <p>Revies Goes Here</p>
+                <p className="text-right mt-5">Full Name </p>
+                <p className="text-right">position</p>
+                <p className="text-right">Company</p>
               </blockquote>
               <button className="absolute bg-yellow-400 rounded-2xl bottom-[50%] left-1 shadow-3xl hover:bg-white">
                 <svg
@@ -90,7 +85,7 @@ function SectionFive() {
                 <button className="h-4 w-4 bg-white rounded-2xl border-yellow-400 border">
                   &nbsp;
                 </button>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
