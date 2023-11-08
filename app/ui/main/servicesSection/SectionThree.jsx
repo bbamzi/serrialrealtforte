@@ -1,5 +1,3 @@
-import Link from "next/link";
-import SectionOneShapeDivider from "../heroSection/SectionOneShapeDivider";
 import SectionThreeDividerButtom from "./SectionThreeDividerButtom";
 import SectionThreeShapeDividerTop from "./SectionThreeShapeDividerTop";
 

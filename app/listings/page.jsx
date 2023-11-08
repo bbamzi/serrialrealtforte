@@ -2,18 +2,15 @@
 import { properties } from "@/scripts/data";
 import Image from "next/image";
 import PropertiesForSale from "../ui/main/listingsSection/PropertiesForSale";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 function AllListings() {
-  const router = useRouter();
-  function handleClick(e, addr) {
-    e.preventDefault();
-    router.push(addr);
-  }
+  // const router = useRouter();
+
   return (
     <div className="p-10 space-y-5">
-      <button onClick={() => router.back()}>⬅️Go Back</button>
+      {/* <button onClick={() => router.back()}>⬅️Go Back</button> */}
 
       <div>
         <h1 className="text-3xl font-bold font-serif">All Listings</h1>

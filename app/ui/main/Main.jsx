@@ -37,7 +37,7 @@ function Main() {
         <SectionFour />
         <SectionFive />
         <ListingSection />
-        <MapSection />
+        {/* <MapSection /> */}
         <SectionSix />
       </div>
     </>
