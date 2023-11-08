@@ -101,16 +101,16 @@ export const carrouselImages = [
     name: "reelfruit",
     src: "/img/reelfruits.png",
   },
-  // {
-  //   id: 2,
-  //   name: "cedarbeaumontfoods",
-  //   src: "/img/cedarbeaumontfoods.png",
-  // },
-  // {
-  //   id: 3,
-  //   name: "midgal",
-  //   src: "/img/midgal.jpg",
-  // },
+  {
+    id: 2,
+    name: "cedarbeaumontfoods",
+    src: "/img/cedarbeaumontfoods.png",
+  },
+  {
+    id: 3,
+    name: "midgal",
+    src: "/img/midgal.jpg",
+  },
   {
     id: 4,
     name: "oghsc",
@@ -126,16 +126,16 @@ export const carrouselImages = [
     name: "reelfruit",
     src: "/img/reelfruits.png",
   },
-  // {
-  //   id: 7,
-  //   name: "cedarbeaumontfoods",
-  //   src: "/img/cedarbeaumontfoods.png",
-  // },
-  // {
-  //   id: 8,
-  //   name: "midgal",
-  //   src: "/img/midgal.jpg",
-  // },
+  {
+    id: 7,
+    name: "cedarbeaumontfoods",
+    src: "/img/cedarbeaumontfoods.png",
+  },
+  {
+    id: 8,
+    name: "midgal",
+    src: "/img/midgal.jpg",
+  },
   {
     id: 9,
     name: "oghsc",
