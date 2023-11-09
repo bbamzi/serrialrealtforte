@@ -5,6 +5,12 @@ import PropertiesForSale from "../ui/main/listingsSection/PropertiesForSale";
 // import { useRouter } from "next/navigation";
 import Link from "next/link";
 
+// export async function generateMetadata({ params }) {
+//   return {
+//     title: "",
+//   };
+// }
+
 function AllListings() {
   // const router = useRouter();
 

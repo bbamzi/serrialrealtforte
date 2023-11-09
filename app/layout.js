@@ -7,6 +7,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Serrial Realty Forte Limited",
   description: "Land and Landed Property Management",
+  keywords: ["Serrial", "Realty", "Forte", "real estate", "abeokuta"],
+  authors: [{ name: "Deji Ogundimu" }],
+  publisher: "Bamigboye Akinbode",
+
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
 };
 
 export default function RootLayout({ children }) {
